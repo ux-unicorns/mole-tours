@@ -1,0 +1,263 @@
+
+*{
+    --color-green:#00A559;
+    --color-yellow:#E2D08E;
+    --color-brown:#B08652;
+}
+
+nav{
+    width: 75%;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+nav button{
+    color: var(--color-green);
+    font-weight: 700;
+    background-color: white;
+    margin-left: 10%;
+}
+
+.header{
+    padding: 0 8rem;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+    border: 2px solid var(--color-green);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+
+}
+
+.hero{
+    background-image: url(../assets/hero-bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 8rem;
+    margin: 0 auto;
+    color: white;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.hero-left .hero-caption{
+    text-transform: uppercase;
+    font-size: 3rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+
+.hero-left .hero-caption::after{
+    position: absolute;
+    border: 3px solid var(--color-green);
+    width: 10rem;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+
+.hero-left p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.hero-left button{
+    background-color: var(--color-green); 
+    color: white;
+    padding: .75rem 10% !important;
+}
+
+.hero-left,.hero-right{width: 50%;}
+
+.hero-right{
+    display: flex;
+    padding-top: 10%;
+}
+
+
+.hero-right>div:first-of-type img{
+    width: 100%;
+}
+
+.hero-right>div:first-of-type{
+    width: 25rem;
+    margin-right: 1rem;
+}
+
+.hero-right>div:last-of-type img:first-of-type{
+    margin-top: 3rem;
+}
+
+.section-stats{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-yellow);
+    padding: 10rem 8rem;
+    align-items: center;
+}
+
+.description{width: 25%;}
+
+.description .sec-title{font-size: 36px; font-weight: 700;margin-bottom: 1rem;}
+.description span{font-size: 1.5rem; color: rgba(0, 0, 0, 0.5);}
+
+.stat-total{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 1rem;
+}
+
+.stat-total ~ span{
+    text-transform: uppercase;
+}
+
+.numbers{
+    gap: 3vw;
+}
+
+.section-stats button{
+    background-color: transparent !important;
+    padding: 1rem 4vw;
+}
+
+.section-travel,
+.section-welcome{
+    padding: 10rem 8rem;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.section-travel>div{
+    align-items: flex-start;
+    width: 55%;
+
+}
+
+.section-travel>img{
+    width: 30%;
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;    
+    text-transform: capitalize;
+}
+
+.section-subtitle{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #00A559;
+    margin-bottom: 3rem;
+}
+
+.section-content{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+
+.section-travel>div>img{
+    align-self: center;
+    width: 75%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.section-welcome .section-content{
+    margin-top: 5rem;
+}
+
+.welcome-left{
+    width: 40%;
+}
+
+.welcome-gallery{
+    justify-content: space-between;
+}
+
+.welcome-gallery>img{
+    width: 30% ;
+}
+
+.section-welcome>img{
+    width: 40%;
+}
+
+.title-center{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10rem;
+}
+
+.service-container{
+    padding: 0 8rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15rem;
+}
+
+.service-container:nth-of-type(2){
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.service-container>div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55%;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    left: 40%;
+    padding: 2rem 8rem;
+}
+
+.service-container:nth-of-type(2)>div{
+    left: 8rem;
+
+}
+
+.service-container .section-title{
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.service-container:not(:last-of-type) .section-title::after{
+    position: absolute;
+    border: 3px solid var(--color-green);
+    width: 7rem;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+
+.service-container:nth-of-type(2) .section-title::after{
+    border: 3px solid var(--color-yellow);
+
+}
