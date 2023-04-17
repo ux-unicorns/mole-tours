@@ -23,6 +23,7 @@ nav button{
     position: fixed;
     width: 100vw;
     background-color: white;
+    z-index: 999;
 }
 
 button{
@@ -73,7 +74,8 @@ button{
 
 }
 
-.hero-left button{
+.hero-left button,
+.section-enquire button{
     background-color: var(--color-green); 
     color: white;
     padding: .75rem 10% !important;
@@ -260,4 +262,360 @@ button{
 .service-container:nth-of-type(2) .section-title::after{
     border: 3px solid var(--color-yellow);
 
+}
+
+.section-packages>.title-center{
+    display: block;
+    text-align: center;
+}
+
+
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .75rem;
+}
+
+.swiper-slide>a{
+    color: var(--color-green);
+    font-weight: 600;
+}
+
+.swiper-slide>img{
+    width: 100%;
+}
+
+
+.swiper{
+    width: 75%;
+    padding-bottom: 3rem;
+}
+
+.swiper-pagination{
+    bottom: 0 !important;
+}
+
+.more{
+    margin: 2rem auto;
+    text-align: right;
+    width: 75%;
+    font-size: 1.5rem;
+}
+
+.more>a{color: var(--color-green);}
+
+
+.section-find{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.find__illustrations{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+.find__illustrations>a{
+    background-image: url(../assets/dest-1.png);
+    background-size: cover;
+    width: 22%;
+    height: 15rem;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 2%;
+
+}
+
+.find__illustrations>a:first-of-type{
+    width: 48%;
+}
+
+.find__illustrations>a>div{
+    background-color: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 2rem 2rem 2rem;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 700;
+}
+
+.section-enquire{
+    width: 100%;
+    background-image: url(../assets/enquire.png);
+    height: 35rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.section-enquire>div{
+    position: relative;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: white;
+    margin-bottom: 3rem;
+
+}
+
+.section-enquire>div::after{
+    position: absolute;
+    border: 3px solid var(--color-green);
+    width: 10rem;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-enquire>p{
+    width: 50%;
+    margin-bottom: 5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.section-enquire>button{
+    padding: .75rem 1rem !important;
+    width: 10rem;
+}
+
+.section-recommendation,
+.section-testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    font-weight: 700;
+}
+
+.section-recommendation>span{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+
+}
+
+.section-testimony>span{
+    font-size: 2.75rem;
+    margin-top: 5rem;
+}
+
+.trip__logo{
+    background-color: var(--color-green);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.section__logo{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.section-testimony .swiper-section{
+    width: 90%;
+}
+
+.testimonySwiper{
+    width: 90%;
+}
+
+.testimonySwiper .swiper-slide{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.testimonySwiper .swiper-wrapper{
+    padding: 0 1rem;
+}
+
+.testimonySwiper .swiper-slide{
+    font-weight: 400;
+    position: relative;
+}
+
+.testimony-user{
+    display: flex;
+    gap: .75rem;
+    margin-bottom: 1rem;
+}
+
+.testimony-user-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-user .user-profile{
+    border: 1px solid gray;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 100%;
+    background-color: var(--color-brown);
+    color: white;
+}
+
+.testimony-user-info>span:first-of-type{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.testimonySwiper .swiper-slide a{
+    margin-top: 1rem;
+}
+
+.testimony-swiper-pagination{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #00A559;
+}
+
+.testimonySwiper .swiper-slide .trip__logo{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 1rem;
+}
+
+.testimonySwiper .swiper-slide .trip__logo img{
+    width: 1.5rem;
+}
+
+.footer-top{
+    background-color: var(--color-yellow);
+    padding: 7rem 5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-bottom{
+    background-color: var(--color-brown);
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-right{
+    display: flex;
+    gap: 2rem;
+    width: 60%;
+
+}
+
+.footer-top-right>div{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.contact-message{
+    max-width: 20rem;
+}
+
+.footer-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.footer-top-left>img{
+    width: 10rem;
+}
+
+.footer-top-left>form{
+    margin: 2.5rem 0;
+}
+
+.footer-top-left>form h3{
+    margin-bottom: 1rem;
+}
+
+
+.footer-top-left>form input[type="text"]{
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.footer-top-left>form input{
+    padding: .75rem;
+    height: 3rem;
+    
+
+}
+
+.footer-top-left>form input[type="submit"]{
+    background-color: var(--color-green);
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateX(-.5rem);
+}
+
+
+.brands{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.socials>div{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #000000;
+}
+
+.socials>div:first-of-type{
+    background-color: #4267B2;
+}
+
+.socials>div:last-of-type{
+    background-color: #DE0000;
 }
